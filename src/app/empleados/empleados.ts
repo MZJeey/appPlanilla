@@ -36,7 +36,7 @@ export class Empleados implements OnInit {
   private readonly http = inject(HttpClient);
   private readonly router = inject(Router);
 
-  private readonly API_URL = 'https://backenplanilla-production.up.railway.app/';
+  private readonly API_URL = 'https://https://backenplanilla-production.up.railway.app//';
   
 
   protected readonly Empleados = signal<Empleado[]>([]);
