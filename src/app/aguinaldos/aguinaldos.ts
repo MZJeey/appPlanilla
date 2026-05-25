@@ -60,11 +60,10 @@ export class Aguinaldos implements OnInit {
   private readonly http = inject(HttpClient);
   private readonly router = inject(Router);
 
-  private readonly BASE_URL = 'https://backenplanilla-production.up.railway.app/';
-  private readonly AGUINALDO_URL = `${this.BASE_URL}/AguinaldosServicio`;
-  private readonly EMPLEADO_URL = `${this.BASE_URL}/EmpleadoServicio`;
-  private readonly USUARIO_URL = `${this.BASE_URL}/UsuarioServicio`;
-
+  private readonly BASE_URL = 'https://backenplanilla-production.up.railway.app';
+private readonly AGUINALDO_URL = `${this.BASE_URL}/AguinaldosServicio`;
+private readonly EMPLEADO_URL = `${this.BASE_URL}/EmpleadoServicio`;
+private readonly USUARIO_URL = `${this.BASE_URL}/UsuarioServicio`;
   readonly perPage = 8;
   readonly COLORS = ['av-red', 'av-green', 'av-blue', 'av-amber', 'av-violet', 'av-teal'];
 
