@@ -38,10 +38,10 @@ export class Puestos implements OnInit {
   private readonly http = inject(HttpClient);
 private readonly router = inject(Router);
 
-private readonly API_URL      = 'https://backenplanilla-production.up.railway.app';
-private readonly PUESTO_URL   = `${this.API_URL}/PuestosServicio`;
-private readonly EMPLEADO_URL = `${this.API_URL}/EmpleadoServicio`;
-private readonly USUARIO_URL  = `${this.API_URL}/UsuarioServicio`;
+  private readonly API_URL      = 'https://backenplanilla-production.up.railway.app';
+  private readonly PUESTO_URL   = `${this.API_URL}/PuestosServicio/`;
+  private readonly EMPLEADO_URL = `${this.API_URL}/EmpleadoServicio/`;
+  private readonly USUARIO_URL  = `${this.API_URL}/UsuarioServicio/`;
 
   protected readonly Empleados = signal<Empleado[]>([]);
   protected readonly Puesto    = signal<Puesto[]>([]);
